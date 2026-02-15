@@ -39,6 +39,9 @@ android {
     buildFeatures {
         compose = true
     }
+    lint {
+        disable.add("RestrictedApi")
+    }
 }
 
 dependencies {
@@ -57,4 +60,17 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // RemoteCompose
+    implementation(libs.androidx.compose.remote.core)
+    implementation(libs.androidx.compose.remote.creation)
+    implementation(libs.androidx.compose.remote.creation.core)
+    implementation(libs.androidx.compose.remote.creation.android)
+    implementation(libs.androidx.compose.remote.creation.compose)
+
+    implementation(libs.androidx.compose.remote.player.core)
+    implementation(libs.androidx.compose.remote.player.view)
+    implementation(libs.androidx.compose.remote.player.compose)
+
+    implementation(libs.androidx.compose.remote.tooling.preview)
 }
