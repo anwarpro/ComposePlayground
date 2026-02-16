@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Valentine's Coding Offer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b5b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221015",
+                        "surface-dark": "#341a22", // A slightly lighter shade for cards
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                    backgroundImage: {
+                        'binary-pattern': "linear-gradient(to bottom, rgba(34, 16, 21, 0.9), rgba(34, 16, 21, 0.95)), url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%23ee2b5b\\' fill-opacity=\\'0.1\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .glass-card-highlight {
+            background: linear-gradient(145deg, rgba(238, 43, 91, 0.15) 0%, rgba(34, 16, 21, 0.4) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(238, 43, 91, 0.5);
+            box-shadow: 0 0 30px rgba(238, 43, 91, 0.15);
+        }
+        .glow-text {
+            text-shadow: 0 0 10px rgba(238, 43, 91, 0.5);
+        }
+        .heart-beat {
+            animation: heartbeat 2s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            5% { transform: scale(1.1); }
+            10% { transform: scale(1); }
+            15% { transform: scale(1.1); }
+            20% { transform: scale(1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center">
+<!-- Mobile Container -->
+<main class="w-full max-w-md mx-auto min-h-screen relative flex flex-col bg-background-light dark:bg-background-dark overflow-hidden shadow-2xl">
+<!-- Decorative Background Elements -->
+<div class="absolute top-0 left-0 w-full h-[500px] bg-binary-pattern opacity-100 pointer-events-none z-0"></div>
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/20 rounded-full blur-[80px] z-0"></div>
+<div class="absolute top-40 -left-20 w-48 h-48 bg-purple-500/10 rounded-full blur-[60px] z-0"></div>
+<!-- Header -->
+<header class="relative z-10 px-6 pt-12 pb-6 text-center">
+<div class="inline-flex items-center justify-center p-2 mb-4 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
+<span class="material-icons text-primary text-sm mr-1">favorite</span>
+<span class="text-xs font-semibold text-primary uppercase tracking-wide">Limited Time Offer</span>
+<span class="material-icons text-primary text-sm ml-1">favorite</span>
+</div>
+<h1 class="text-4xl font-bold leading-tight mb-2">
+                Code Your <br/>
+<span class="text-primary glow-text">Heart Out</span>
+</h1>
+<p class="text-gray-400 text-sm max-w-[80%] mx-auto">
+                Fall in love with Python this Valentine's. <br/> Special pricing for you and your coding partner.
+            </p>
+<!-- Countdown Timer -->
+<div class="flex justify-center gap-3 mt-6">
+<div class="flex flex-col items-center p-2 bg-surface-dark/50 rounded-lg border border-white/5 w-14">
+<span class="text-lg font-bold text-white">02</span>
+<span class="text-[10px] text-gray-400 uppercase">Days</span>
+</div>
+<div class="flex flex-col items-center p-2 bg-surface-dark/50 rounded-lg border border-white/5 w-14">
+<span class="text-lg font-bold text-white">14</span>
+<span class="text-[10px] text-gray-400 uppercase">Hrs</span>
+</div>
+<div class="flex flex-col items-center p-2 bg-surface-dark/50 rounded-lg border border-white/5 w-14">
+<span class="text-lg font-bold text-white text-primary">38</span>
+<span class="text-[10px] text-gray-400 uppercase">Mins</span>
+</div>
+</div>
+</header>
+<!-- Pricing Cards Scroll Area -->
+<div class="relative z-10 flex-1 overflow-y-auto px-6 pb-32 space-y-5 scrollbar-hide">
+<!-- Card 1: Free -->
+<div class="glass-card rounded-xl p-6 relative group transition-transform active:scale-[0.98]">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-lg font-semibold text-white">The Single Bracket</h3>
+<p class="text-xs text-gray-400 mt-1">For those just starting to script.</p>
+</div>
+<span class="material-icons text-gray-500">code</span>
+</div>
+<div class="text-3xl font-bold text-white mb-6">$0<span class="text-sm font-normal text-gray-500">/mo</span></div>
+<ul class="space-y-3 mb-2">
+<li class="flex items-center text-sm text-gray-300">
+<span class="material-icons text-xs text-gray-500 mr-2">check_circle</span>
+                        Access to 5 Intro Lessons
+                    </li>
+<li class="flex items-center text-sm text-gray-300">
+<span class="material-icons text-xs text-gray-500 mr-2">check_circle</span>
+                        Basic Syntax Cheat Sheet
+                    </li>
+<li class="flex items-center text-sm text-gray-300">
+<span class="material-icons text-xs text-gray-500 mr-2">check_circle</span>
+                        Community Support
+                    </li>
+</ul>
+</div>
+<!-- Card 2: Pro (Best Value) -->
+<div class="glass-card-highlight rounded-xl p-6 relative group transition-transform active:scale-[0.98]">
+<!-- Badge -->
+<div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg shadow-primary/30">
+                    Most Loved
+                </div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-lg font-semibold text-white">Committed Coder</h3>
+<p class="text-xs text-primary/80 mt-1">Ready to merge to main.</p>
+</div>
+<span class="material-icons text-primary">favorite</span>
+</div>
+<div class="text-3xl font-bold text-white mb-1">$14<span class="text-sm font-normal text-gray-400">/mo</span></div>
+<div class="text-xs text-primary line-through mb-5">$29/mo</div>
+<ul class="space-y-3 mb-2">
+<li class="flex items-center text-sm text-white font-medium">
+<span class="material-icons text-xs text-primary mr-2">favorite</span>
+                        Full Python Mastery Path
+                    </li>
+<li class="flex items-center text-sm text-white font-medium">
+<span class="material-icons text-xs text-primary mr-2">favorite</span>
+                        Web Dev Bootcamp
+                    </li>
+<li class="flex items-center text-sm text-white font-medium">
+<span class="material-icons text-xs text-primary mr-2">favorite</span>
+                        Unlimited Certificates
+                    </li>
+<li class="flex items-center text-sm text-white font-medium">
+<span class="material-icons text-xs text-primary mr-2">favorite</span>
+                        Offline Downloads
+                    </li>
+</ul>
+</div>
+<!-- Card 3: Couple (Special Offer) -->
+<div class="glass-card rounded-xl p-6 relative group transition-transform active:scale-[0.98] border-purple-500/20">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-lg font-semibold text-white">Pair Programming</h3>
+<p class="text-xs text-purple-300 mt-1">Better together. 2 Accounts.</p>
+</div>
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-surface-dark border border-white/10 overflow-hidden flex items-center justify-center">
+<span class="material-icons text-xs text-gray-400">person</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary border border-white/10 overflow-hidden flex items-center justify-center relative z-10">
+<span class="material-icons text-xs text-white">person</span>
+</div>
+</div>
+</div>
+<div class="text-3xl font-bold text-white mb-1">$19<span class="text-sm font-normal text-gray-500">/mo</span></div>
+<div class="flex items-center gap-2 mb-5">
+<span class="bg-gradient-to-r from-primary to-purple-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">SAVE 50%</span>
+<span class="text-xs text-gray-500 line-through">$45/mo</span>
+</div>
+<ul class="space-y-3 mb-2">
+<li class="flex items-center text-sm text-gray-300">
+<span class="material-icons text-xs text-purple-400 mr-2">group_work</span>
+                        2 Premium Accounts
+                    </li>
+<li class="flex items-center text-sm text-gray-300">
+<span class="material-icons text-xs text-purple-400 mr-2">group_work</span>
+                        Shared Progress Dashboard
+                    </li>
+<li class="flex items-center text-sm text-gray-300">
+<span class="material-icons text-xs text-purple-400 mr-2">group_work</span>
+                        Pair Programming Challenges
+                    </li>
+</ul>
+</div>
+<!-- Features Grid (Compact) -->
+<div class="pt-4 pb-2">
+<h4 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-4 text-center">Why developers love us</h4>
+<div class="grid grid-cols-2 gap-3">
+<div class="glass-card p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+<span class="material-icons text-primary text-sm">terminal</span>
+</div>
+<span class="text-xs font-medium text-gray-300">Interactive Console</span>
+</div>
+<div class="glass-card p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-blue-500/10 flex items-center justify-center">
+<span class="material-icons text-blue-400 text-sm">school</span>
+</div>
+<span class="text-xs font-medium text-gray-300">Expert Mentors</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom CTA -->
+<div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-background-dark via-background-dark/95 to-transparent z-20">
+<button class="heart-beat w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-6 rounded-full shadow-lg shadow-primary/40 flex items-center justify-center gap-2 transition-all">
+<span>Claim Offer</span>
+<span class="material-icons text-sm">arrow_forward</span>
+</button>
+<p class="text-center text-[10px] text-gray-500 mt-3">
+                Offer ends Feb 15th. Cancel anytime.
+            </p>
+</div>
+</main>
+</body></html>

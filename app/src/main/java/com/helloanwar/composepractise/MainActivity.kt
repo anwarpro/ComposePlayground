@@ -14,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.helloanwar.composepractise.ui.theme.ComposePractiseTheme
+import com.helloanwar.composepractise.ui.campaign.ValentineRemoteScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +29,7 @@ class MainActivity : ComponentActivity() {
                             .padding(innerPadding),
                         color = MaterialTheme.colorScheme.background
                     ) {
-                        RemoteComposeScreen()
+                        ValentineRemoteScreen()
                     }
                 }
             }
