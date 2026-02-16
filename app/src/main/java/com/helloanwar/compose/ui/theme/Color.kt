@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise.ui.theme
+package com.helloanwar.compose.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

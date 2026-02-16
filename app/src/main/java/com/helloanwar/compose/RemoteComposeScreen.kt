@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise
+package com.helloanwar.compose
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.BoxWithConstraints

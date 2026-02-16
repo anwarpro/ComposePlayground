@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.helloanwar.composepractise"
+    namespace = "com.helloanwar.compose"
     compileSdk {
         version = release(36)
     }

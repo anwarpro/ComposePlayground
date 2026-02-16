@@ -1,6 +1,6 @@
-# Contributing to Compose Practise
+# Contributing to Compose Playground
 
-Thank you for your interest in contributing to **Compose Practise**! We welcome contributions from the community to help make this a better resource for learning Jetpack Compose.
+Thank you for your interest in contributing to **Compose Playground**! We welcome contributions from the community to help make this a better resource for learning Jetpack Compose.
 
 ## How to Contribute
 

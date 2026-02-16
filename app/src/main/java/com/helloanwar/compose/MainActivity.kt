@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise
+package com.helloanwar.compose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -13,8 +13,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.helloanwar.composepractise.ui.theme.ComposePractiseTheme
-import com.helloanwar.composepractise.ui.campaign.ValentineRemoteScreen
+import com.helloanwar.compose.ui.theme.ComposePractiseTheme
+import com.helloanwar.compose.ui.campaign.ValentineRemoteScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,6 +1,6 @@
-# Compose Practise
+# Compose Playground
 
-Welcome to the **Compose Practise** repository! This project is dedicated to mastering Jetpack Compose by exploring advanced design patterns, UI challenges, and best practices in modern Android development.
+Welcome to the **Compose Playground** repository! This project is dedicated to mastering Jetpack Compose by exploring advanced design patterns, UI challenges, and best practices in modern Android development.
 
 ## 🎯 Purpose
 

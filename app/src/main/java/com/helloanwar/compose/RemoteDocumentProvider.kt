@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise
+package com.helloanwar.compose
 
 import android.content.Context
 import androidx.compose.remote.core.CoreDocument

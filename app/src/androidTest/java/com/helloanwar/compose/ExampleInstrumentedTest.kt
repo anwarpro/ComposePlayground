@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise
+package com.helloanwar.compose
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise
+package com.helloanwar.compose
 
 import org.junit.Test
 

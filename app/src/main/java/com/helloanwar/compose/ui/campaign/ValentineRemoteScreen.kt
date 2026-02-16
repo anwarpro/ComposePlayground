@@ -1,4 +1,4 @@
-package com.helloanwar.composepractise.ui.campaign
+package com.helloanwar.compose.ui.campaign
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.BoxWithConstraints
@@ -34,7 +34,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 
 @SuppressLint("RestrictedApi")
