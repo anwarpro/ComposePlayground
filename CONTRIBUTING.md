@@ -7,7 +7,7 @@ Thank you for your interest in contributing to **Compose Playground**! We welcom
 1.  **Fork the repository**: Click the "Fork" button at the top right of this page.
 2.  **Clone your fork**:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/ComposePractise.git
+    git clone https://github.com/YOUR_USERNAME/ComposePlayground.git
     ```
 3.  **Create a branch**:
     ```bash

@@ -28,7 +28,7 @@ The main goal of this repository is to demonstrate how to:
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/mhdanwar/ComposePractise.git
+    git clone https://github.com/anwarpro/ComposePlayground.git
     ```
 2.  Open the project in Android Studio (Ladybug or newer recommended).
 3.  Sync Gradle and run the app on your device or emulator.
