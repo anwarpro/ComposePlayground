@@ -1,0 +1,20 @@
+appId: com.helloanwar.composepractise
+---
+- launchApp:
+    appId: "com.helloanwar.composepractise"
+    clearState: true
+- assertVisible: "Code Your"
+
+- assertVisible: "Heart Out"
+- assertVisible: "02"
+- assertVisible: "14"
+- assertVisible: "38"
+- assertVisible: "The Single Bracket"
+- assertVisible: "$0"
+- assertVisible: "Committed Coder"
+- assertVisible: "$14"
+- assertVisible: "Pair Programming"
+- assertVisible: "$19"
+- assertVisible: "MOST LOVED"
+- assertVisible: "WHY DEVELOPERS LOVE US"
+- assertVisible: "Claim Offer"
